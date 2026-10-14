@@ -1,4 +1,3 @@
-# taiwan-stock-updater
 import requests
 import pandas as pd
 import ipywidgets as widgets
@@ -86,7 +85,7 @@ def generate_copy_buttons_html(tw_text, two_text):
 # 5. 定義更新與比對邏輯
 def fetch_and_compare_tickers(b):
     global prev_tw_set, prev_two_set
-    # 顯示密碼輸入窗；預設密碼592888
+
     input_pwd = pwd_input.value.strip()
     if input_pwd != "592888":
         status_label.value = "<p style='color: #c62828; font-weight: bold;'>❌ 密碼錯誤或未輸入，拒絕存取數據！</p>"
